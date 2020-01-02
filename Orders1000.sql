@@ -1,3 +1,17 @@
+-- All
+-- Branches (10)
+-- Staff (100)
+-- Products (100)
+-- Stock (1,000)
+-- Customer (1,000)
+-- Orders (1,000)
+-- Prices (1,000)
+
+SET foreign_key_checks = 0; -- switch back on at end of file
+
+
+
+
 insert into Orders (OID, CID, ODATE, PID, BID) values (1, 1, '5/27/2019', 1, 1);
 insert into Orders (OID, CID, ODATE, PID, BID) values (2, 2, '12/5/2018', 2, 2);
 insert into Orders (OID, CID, ODATE, PID, BID) values (3, 3, '2/24/2019', 3, 3);
@@ -998,3 +1012,11 @@ insert into Orders (OID, CID, ODATE, PID, BID) values (997, 997, '11/28/2018', 9
 insert into Orders (OID, CID, ODATE, PID, BID) values (998, 998, '1/5/2019', 998, 998);
 insert into Orders (OID, CID, ODATE, PID, BID) values (999, 999, '8/29/2019', 999, 999);
 insert into Orders (OID, CID, ODATE, PID, BID) values (1000, 1000, '10/12/2019', 1000, 1000);
+
+
+
+
+SET foreign_key_checks = 1;
+
+
+
