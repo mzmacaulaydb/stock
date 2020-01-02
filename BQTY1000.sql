@@ -1,3 +1,15 @@
+-- All
+-- Branches (10)
+-- Staff (100)
+-- Products (100)
+-- Stock (1,000)
+-- Customer (1,000)
+-- Orders (1,000)
+-- Prices (1,000)
+
+SET foreign_key_checks = 0; -- switch back on at end of file
+
+
 insert into BQTY (BID, PID, QTY) values (7, 93, 58);
 insert into BQTY (BID, PID, QTY) values (3, 19, 14);
 insert into BQTY (BID, PID, QTY) values (4, 42, 97);
@@ -998,3 +1010,7 @@ insert into BQTY (BID, PID, QTY) values (3, 93, 13);
 insert into BQTY (BID, PID, QTY) values (6, 36, 57);
 insert into BQTY (BID, PID, QTY) values (3, 73, 72);
 insert into BQTY (BID, PID, QTY) values (4, 5, 27);
+
+
+SET foreign_key_checks = 1;
+
