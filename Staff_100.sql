@@ -1,3 +1,15 @@
+-- All
+-- Branches (10)
+-- Staff (100)
+-- Products (100)
+-- Stock (1,000)
+-- Customer (1,000)
+-- Orders (1,000)
+-- Prices (1,000)
+
+SET foreign_key_checks = 0; -- switch back on at end of file
+
+
 insert into Staff (SID, BID, SFN, SLN, SAD, SEM, SMN, SAGE) values (1, 1, 'Keely', 'Cutill', '328 Haas Park', 'kcutill0@sphinn.com', 75613090280, 80);
 insert into Staff (SID, BID, SFN, SLN, SAD, SEM, SMN, SAGE) values (2, 3, 'Scotti', 'Exell', '277 Crescent Oaks Place', 'sexell1@godaddy.com', 78320570054, 21);
 insert into Staff (SID, BID, SFN, SLN, SAD, SEM, SMN, SAGE) values (3, 5, 'Aurie', 'Bushaway', '9 Colorado Place', 'abushaway2@exblog.jp', 72958124355, 25);
@@ -98,3 +110,5 @@ insert into Staff (SID, BID, SFN, SLN, SAD, SEM, SMN, SAGE) values (97, 10, 'Ant
 insert into Staff (SID, BID, SFN, SLN, SAD, SEM, SMN, SAGE) values (98, 9, 'Cam', 'Huelin', '688 Pond Junction', 'chuelin2p@yolasite.com', 70976646747, 15);
 insert into Staff (SID, BID, SFN, SLN, SAD, SEM, SMN, SAGE) values (99, 3, 'Starla', 'Roggieri', '16084 Di Loreto Avenue', 'sroggieri2q@ehow.com', 74173810536, 27);
 insert into Staff (SID, BID, SFN, SLN, SAD, SEM, SMN, SAGE) values (100, 1, 'Chantalle', 'Gueste', '19008 Summer Ridge Trail', 'cgueste2r@t.co', 78688683076, 58);
+
+SET foreign_key_checks = 0;
