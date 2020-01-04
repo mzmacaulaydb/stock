@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS `Staff` (
   `SAGE` INT NOT NULL, CONSTRAINT staff_min_age CHECK(SAGE>=13),
   PRIMARY KEY (`SID`, `BID`),
   CONSTRAINT STAFFBID_FK
-  FOREIGN KEY (`BID`) REFERENCES `Branches` (`BID`));
+  FOREIGN KEY (`BID`) REFERENCES `Branches` (`BMAN`));
     
 -- -----------------------------------------------------
 -- Table `BQTY`
