@@ -1,8 +1,4 @@
-
--- -----------------------------------------------------
--- Table `Branches`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Branches` (
+CREATE TABLE IF NOT EXISTS `stock'.'Branches` (
   `BID` INT NOT NULL,
   `BNAME` VARCHAR(50) NOT NULL,
   `BADD` VARCHAR(100) NOT NULL,
@@ -12,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `Branches` (
 -- -----------------------------------------------------
 -- Table `Customers`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Customers` (
+CREATE TABLE IF NOT EXISTS `stock'.'Customers` (
   `CID` INT NOT NULL,
   `CFN` VARCHAR(50) NOT NULL,
   `CLN` VARCHAR(50) NOT NULL,
@@ -24,25 +20,9 @@ CREATE TABLE IF NOT EXISTS `Customers` (
   PRIMARY KEY (`CID`));
   
 -- -----------------------------------------------------
--- Table `Orders`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Orders` (
-  `OID` INT NOT NULL,
-  `CID` INT NOT NULL,
-  `ODATE` DATETIME NOT NULL,
-  `OQTY` INT NOT NULL, CONSTRAINT o_qty_not_negative CHECK(OQTY>=0),
-  `PID` INT NOT NULL,
-  `BID` INT NOT NULL,
-  PRIMARY KEY (`OID`, `CID`),
-  CONSTRAINT ORDERCID_FK
-  FOREIGN KEY (`CID`) REFERENCES `Customers` (`CID`),
-  CONSTRAINT ORDERPID_FK
-  FOREIGN KEY (`PID`) REFERENCES `Products` (`PID`));
-  
-  -- -----------------------------------------------------
 -- Table `Products`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Products` (
+CREATE TABLE IF NOT EXISTS `stock'.'Products` (
   `PID` INT NOT NULL,
   `PNAME` VARCHAR(50) NOT NULL,
   `PDESC` VARCHAR(200) NOT NULL,
@@ -51,23 +31,39 @@ CREATE TABLE IF NOT EXISTS `Products` (
   `AISLE` INT NOT NULL,
   `LIVE` TINYINT NOT NULL,
   PRIMARY KEY (`PID`));
- 
+  
+-- -----------------------------------------------------
+-- Table `Orders`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `stock'.'Orders` (
+  `OID` INT NOT NULL,
+  `CID` INT NOT NULL,
+  `ODATE` DATETIME NOT NULL,
+  `OQTY` INT NOT NULL, CONSTRAINT o_qty_not_negative CHECK(OQTY>=0),
+  `PID` INT NOT NULL,
+  `BID` INT NOT NULL,
+  PRIMARY KEY (`OID`, `CID`),
+  CONSTRAINT ORDERCID_FK
+  FOREIGN KEY (`CID`) REFERENCES `stock'.'Customers` (`CID`),
+  CONSTRAINT ORDERPID_FK
+  FOREIGN KEY (`PID`) REFERENCES `stock'.'Products` (`PID`));
+  
 -- -----------------------------------------------------
 -- Table `Prices`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Prices` (
+CREATE TABLE IF NOT EXISTS `stock'.'Prices` (
   `DATE` DATE NOT NULL,
   `PID` INT NOT NULL,
   `PRICE` DECIMAL(3,2) NOT NULL,
   CONSTRAINT price_not_negative CHECK (PRICE>=0),
   PRIMARY KEY (`DATE`, `PID`),
   CONSTRAINT PRICESPID_FK
-  FOREIGN KEY (`PID`) REFERENCES `Products` (`PID`));
+  FOREIGN KEY (`PID`) REFERENCES `stock'.'Products` (`PID`));
     
 -- -----------------------------------------------------
 -- Table `Staff`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Staff` (
+CREATE TABLE IF NOT EXISTS `stock'.'Staff` (
   `SID` INT NOT NULL,
   `BID` INT NOT NULL,
   `SFN` VARCHAR(50) NOT NULL,
@@ -76,19 +72,19 @@ CREATE TABLE IF NOT EXISTS `Staff` (
   `SEM` VARCHAR(50) NOT NULL,
   `SMN` BIGINT(14) NULL, -- not compulsary to have mobile phone
   `SAGE` INT NOT NULL, CONSTRAINT staff_min_age CHECK(SAGE>=13),
-  PRIMARY KEY (`SID`, `BID`),
+  PRIMARY KEY (`SID`),
   CONSTRAINT STAFFBID_FK
-  FOREIGN KEY (`BID`) REFERENCES `Branches` (`BMAN`));
+  FOREIGN KEY (`BID`) REFERENCES `stock'.'Branches` (`BID`));
+
     
 -- -----------------------------------------------------
 -- Table `BQTY`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `BQTY` (
+CREATE TABLE IF NOT EXISTS `stock'.'BQTY` (
   `BID` INT NOT NULL,
   `PID` INT NOT NULL,
   `QTY` INT NOT NULL,
   CONSTRAINT b_qty_not_negative CHECK(QTY>=0),
   PRIMARY KEY (`PID`, `BID`), 
   CONSTRAINT BQTYPID_FK
-  FOREIGN KEY (PID) REFERENCES Products(PID));
-          
+  FOREIGN KEY (PID) REFERENCES `stock'.'Products` (`PID`));
