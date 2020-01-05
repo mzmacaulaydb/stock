@@ -1,0 +1,10 @@
+insert into Branches (BID, BNAME, BADD, BMAN) values (1, 'Banhā', '0817 Fisk Plaza', 7);
+insert into Branches (BID, BNAME, BADD, BMAN) values (4, 'Mitrópoli', '7361 Crescent Oaks Park', 9);
+insert into Branches (BID, BNAME, BADD, BMAN) values (9, 'Zhouling', '09 Westerfield Parkway', 1);
+insert into Branches (BID, BNAME, BADD, BMAN) values (7, 'Hengshan', '672 Esch Crossing', 7);
+insert into Branches (BID, BNAME, BADD, BMAN) values (10, 'Descalvado', '650 Old Gate Court', 7);
+insert into Branches (BID, BNAME, BADD, BMAN) values (10, 'Bitanjuan', '619 Shoshone Junction', 2);
+insert into Branches (BID, BNAME, BADD, BMAN) values (8, 'Muchkapskiy', '8134 Huxley Terrace', 7);
+insert into Branches (BID, BNAME, BADD, BMAN) values (9, 'Muyinga', '21304 Colorado Terrace', 10);
+insert into Branches (BID, BNAME, BADD, BMAN) values (5, 'Cocorná', '29 Texas Trail', 10);
+insert into Branches (BID, BNAME, BADD, BMAN) values (8, 'Compiègne', '00 Carioca Pass', 10);
