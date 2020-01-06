@@ -1,6 +1,3 @@
 
-<h1 align="center">
-    <img src="https://5xlszg.by.files.1drv.com/y4mgI7eYbo5rSmteH2_U-g-oz39DgMopP26UUR2MyUfwa33D3FvvvfbHppwf96abVKlgW7zn7DtewOjHl4_jYDgwYAVduK9yzByUTDttWSGKziC-U5sRBV7Qi78X4dAQJcvyDmKALqvaU6gX7qUlQPHFKxP8E9akT2bIujoSxZS_F967QajJqz8daLhWbMJZwToTLZJA_D6gXYNwqx-tU8hIA?width=892&height=659&cropmode=none" />
-</h1>
-
+<h1 align="center"><img src="https://github.com/mzmacaulaydb/stock/blob/884b1983d488bd89aaa7ec92969b670e38508df9/ERD.JPG"></h1>
 <p align="center">
