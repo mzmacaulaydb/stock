@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `Orders` (
   FOREIGN KEY (`CID`) REFERENCES `Customers` (`CID`),
   CONSTRAINT ORDERPID_FK
   FOREIGN KEY (`PID`) REFERENCES `Products` (`PID`),
-  CONSTRAINT ORDERPID_FK
+  CONSTRAINT ORDERSID_FK
   FOREIGN KEY (`SOID`) REFERENCES `Staff` (`SID`));
   
   -- -----------------------------------------------------
