@@ -1,10 +1,11 @@
-insert into Branches (BID, BNAME, BADD, BMAN) values (1, 'Banhā', '0817 Fisk Plaza', 7);
-insert into Branches (BID, BNAME, BADD, BMAN) values (4, 'Mitrópoli', '7361 Crescent Oaks Park', 9);
-insert into Branches (BID, BNAME, BADD, BMAN) values (9, 'Zhouling', '09 Westerfield Parkway', 1);
-insert into Branches (BID, BNAME, BADD, BMAN) values (7, 'Hengshan', '672 Esch Crossing', 7);
-insert into Branches (BID, BNAME, BADD, BMAN) values (10, 'Descalvado', '650 Old Gate Court', 7);
-insert into Branches (BID, BNAME, BADD, BMAN) values (10, 'Bitanjuan', '619 Shoshone Junction', 2);
-insert into Branches (BID, BNAME, BADD, BMAN) values (8, 'Muchkapskiy', '8134 Huxley Terrace', 7);
-insert into Branches (BID, BNAME, BADD, BMAN) values (9, 'Muyinga', '21304 Colorado Terrace', 10);
-insert into Branches (BID, BNAME, BADD, BMAN) values (5, 'Cocorná', '29 Texas Trail', 10);
-insert into Branches (BID, BNAME, BADD, BMAN) values (8, 'Compiègne', '00 Carioca Pass', 10);
+
+insert into Branches (BID, BNAME, BADD, BMAN) values (1, 'Moshenskoye', '4 La Follette Road', 4);
+insert into Branches (BID, BNAME, BADD, BMAN) values (2, 'San Eduardo', '72 Darwin Point', 6);
+insert into Branches (BID, BNAME, BADD, BMAN) values (3, 'Nkurenkuru', '7 Pennsylvania Hill', 8);
+insert into Branches (BID, BNAME, BADD, BMAN) values (4, 'Hendala', '52 Bobwhite Terrace', 2);
+insert into Branches (BID, BNAME, BADD, BMAN) values (5, 'Taradale', '956 Havey Crossing', 9);
+insert into Branches (BID, BNAME, BADD, BMAN) values (6, 'Gurgurnica', '4152 Kipling Point', 1);
+insert into Branches (BID, BNAME, BADD, BMAN) values (7, 'Guamal', '3885 Mccormick Alley', 6);
+insert into Branches (BID, BNAME, BADD, BMAN) values (8, 'Ranot', '76 Sauthoff Junction', 10);
+insert into Branches (BID, BNAME, BADD, BMAN) values (9, 'Samdrup Jongkhar', '3975 Spaight Park', 6);
+insert into Branches (BID, BNAME, BADD, BMAN) values (10, 'Shitun', '07488 5th Court', 9);
