@@ -998,3 +998,4 @@ insert into BQTY (BID, PID, QTY) values (7, 48, 20);
 insert into BQTY (BID, PID, QTY) values (8, 33, 16);
 insert into BQTY (BID, PID, QTY) values (5, 2, 82);
 insert into BQTY (BID, PID, QTY) values (5, 63, 41);
+COMMIT;
