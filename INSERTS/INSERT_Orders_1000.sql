@@ -998,3 +998,4 @@ insert into Orders (OID, CID, ODATE, OQTY, PID, BID, SID, STATUS) values (997, 8
 insert into Orders (OID, CID, ODATE, OQTY, PID, BID, SID, STATUS) values (998, 571, '2019-07-23', 10, 78, 1, 15, 4);
 insert into Orders (OID, CID, ODATE, OQTY, PID, BID, SID, STATUS) values (999, 961, '2019-12-15', 10, 17, 4, 96, 1);
 insert into Orders (OID, CID, ODATE, OQTY, PID, BID, SID, STATUS) values (1000, 478, '2019-01-08', 4, 31, 1, 27, 1);
+COMMIT;
