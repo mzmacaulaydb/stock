@@ -9,3 +9,4 @@ insert into Branches (BID, BNAME, BADD, BMAN) values (7, 'Guamal', '3885 Mccormi
 insert into Branches (BID, BNAME, BADD, BMAN) values (8, 'Ranot', '76 Sauthoff Junction', 10);
 insert into Branches (BID, BNAME, BADD, BMAN) values (9, 'Samdrup Jongkhar', '3975 Spaight Park', 6);
 insert into Branches (BID, BNAME, BADD, BMAN) values (10, 'Shitun', '07488 5th Court', 9);
+COMMIT;
