@@ -98,3 +98,4 @@ insert into Products (PID, PNAME, PDESC, PSIZE, UOM, AISLE, LIVE) values (97, 'P
 insert into Products (PID, PNAME, PDESC, PSIZE, UOM, AISLE, LIVE) values (98, 'Cake - Sheet Strawberry', 'Irish Cream - Butterscotch', 7, 'AREA', 82, 1);
 insert into Products (PID, PNAME, PDESC, PSIZE, UOM, AISLE, LIVE) values (99, 'Sugar - Crumb', 'Wine - Zinfandel Rosenblum', 25, 'LITRE', 58, 0);
 insert into Products (PID, PNAME, PDESC, PSIZE, UOM, AISLE, LIVE) values (100, 'Cake - Mini Cheesecake', 'Mcguinness - Blue Curacao', 35, 'AREA', 30, 0);
+COMMIT;
