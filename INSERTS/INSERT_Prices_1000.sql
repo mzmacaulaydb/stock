@@ -998,3 +998,4 @@ insert into Prices (DATE, PID, PRICE) values ('2018-12-12', 76, 50.42);
 insert into Prices (DATE, PID, PRICE) values ('2018-12-23', 3, 16.16);
 insert into Prices (DATE, PID, PRICE) values ('2019-04-09', 84, 82.91);
 insert into Prices (DATE, PID, PRICE) values ('2019-09-13', 85, 16.73);
+COMMIT;
