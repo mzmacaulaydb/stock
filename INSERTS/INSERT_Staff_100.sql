@@ -98,3 +98,4 @@ insert into Staff (SID, BID, SFN, SLN, SAD, SEM, SMN, SAGE) values (97, 1, 'Gerr
 insert into Staff (SID, BID, SFN, SLN, SAD, SEM, SMN, SAGE) values (98, 2, 'Wait', 'Riseborough', '4062 Claremont Center', 'wriseborough2p@opensource.org', 76564881884, 93);
 insert into Staff (SID, BID, SFN, SLN, SAD, SEM, SMN, SAGE) values (99, 6, 'Dido', 'Milier', '64708 Schiller Plaza', 'dmilier2q@usatoday.com', 76903189777, 89);
 insert into Staff (SID, BID, SFN, SLN, SAD, SEM, SMN, SAGE) values (100, 2, 'Joshuah', 'Rooke', '6 Mccormick Parkway', 'jrooke2r@cdc.gov', 77536278021, 51);
+COMMIT;
