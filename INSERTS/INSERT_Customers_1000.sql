@@ -998,3 +998,4 @@ insert into Customers (CID, CFN, CLN, CAD, CEM, CMN, CAGE, CG) values (997, 'Ter
 insert into Customers (CID, CFN, CLN, CAD, CEM, CMN, CAGE, CG) values (998, 'Denni', 'Haulkham', '4 Dryden Junction', 'dhaulkhamrp@japanpost.jp', 74359961629, 24, 1);
 insert into Customers (CID, CFN, CLN, CAD, CEM, CMN, CAGE, CG) values (999, 'Kelwin', 'Poacher', '373 Manitowish Lane', 'kpoacherrq@jigsy.com', 73827519859, 76, 1);
 insert into Customers (CID, CFN, CLN, CAD, CEM, CMN, CAGE, CG) values (1000, 'Timmi', 'Morde', '39128 Saint Paul Court', 'tmorderr@macromedia.com', 78676127470, 50, 2);
+COMMIT;
